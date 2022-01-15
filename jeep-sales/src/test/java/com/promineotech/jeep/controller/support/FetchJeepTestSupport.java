@@ -42,7 +42,7 @@ public class FetchJeepTestSupport extends BaseTest {
    * @param status
    */
   
-  protected void assertErrorMessage(Map<String, Object> error, HttpStatus status) {
+  protected void assertErrorMessageValid(Map<String, Object> error, HttpStatus status) {
     // @// @formatter:off
     assertThat(error)
       .containsKey("message")
